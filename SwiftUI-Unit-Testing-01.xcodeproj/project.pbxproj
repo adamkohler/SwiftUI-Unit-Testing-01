@@ -11,8 +11,12 @@
 		E41CD0A0262CFED200679FCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD09F262CFED200679FCA /* ContentView.swift */; };
 		E41CD0A2262CFED400679FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41CD0A1262CFED400679FCA /* Assets.xcassets */; };
 		E41CD0A5262CFED400679FCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41CD0A4262CFED400679FCA /* Preview Assets.xcassets */; };
-		E41CD0B0262CFED400679FCA /* SwiftUI_Unit_Testing_01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0AF262CFED400679FCA /* SwiftUI_Unit_Testing_01Tests.swift */; };
 		E41CD0BB262CFED400679FCA /* SwiftUI_Unit_Testing_01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0BA262CFED400679FCA /* SwiftUI_Unit_Testing_01UITests.swift */; };
+		E41CD0D1262CFF2000679FCA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0CD262CFF2000679FCA /* Movie.swift */; };
+		E41CD0D2262CFF2000679FCA /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0CE262CFF2000679FCA /* MovieRepository.swift */; };
+		E41CD0DF262CFF7200679FCA /* MovieRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0DD262CFF7200679FCA /* MovieRepoTest.swift */; };
+		E41CD0E0262CFF7200679FCA /* MovieStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0DE262CFF7200679FCA /* MovieStructTests.swift */; };
+		E41CD0F4262D014700679FCA /* FilmFestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD0F3262D014700679FCA /* FilmFestUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +44,15 @@
 		E41CD0A4262CFED400679FCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E41CD0A6262CFED400679FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41CD0AB262CFED400679FCA /* SwiftUI-Unit-Testing-01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Unit-Testing-01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41CD0AF262CFED400679FCA /* SwiftUI_Unit_Testing_01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Unit_Testing_01Tests.swift; sourceTree = "<group>"; };
 		E41CD0B1262CFED400679FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41CD0B6262CFED400679FCA /* SwiftUI-Unit-Testing-01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Unit-Testing-01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41CD0BA262CFED400679FCA /* SwiftUI_Unit_Testing_01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Unit_Testing_01UITests.swift; sourceTree = "<group>"; };
 		E41CD0BC262CFED400679FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41CD0CD262CFF2000679FCA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E41CD0CE262CFF2000679FCA /* MovieRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		E41CD0DD262CFF7200679FCA /* MovieRepoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRepoTest.swift; sourceTree = "<group>"; };
+		E41CD0DE262CFF7200679FCA /* MovieStructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieStructTests.swift; sourceTree = "<group>"; };
+		E41CD0F3262D014700679FCA /* FilmFestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFestUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,13 @@
 		E41CD09C262CFED200679FCA /* SwiftUI-Unit-Testing-01 */ = {
 			isa = PBXGroup;
 			children = (
+				E41CD0CC262CFF2000679FCA /* Model */,
 				E41CD09D262CFED200679FCA /* SwiftUI_Unit_Testing_01App.swift */,
 				E41CD09F262CFED200679FCA /* ContentView.swift */,
 				E41CD0A1262CFED400679FCA /* Assets.xcassets */,
 				E41CD0A6262CFED400679FCA /* Info.plist */,
 				E41CD0A3262CFED400679FCA /* Preview Content */,
+				E41CD0F3262D014700679FCA /* FilmFestUI.swift */,
 			);
 			path = "SwiftUI-Unit-Testing-01";
 			sourceTree = "<group>";
@@ -115,7 +125,8 @@
 		E41CD0AE262CFED400679FCA /* SwiftUI-Unit-Testing-01Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E41CD0AF262CFED400679FCA /* SwiftUI_Unit_Testing_01Tests.swift */,
+				E41CD0DD262CFF7200679FCA /* MovieRepoTest.swift */,
+				E41CD0DE262CFF7200679FCA /* MovieStructTests.swift */,
 				E41CD0B1262CFED400679FCA /* Info.plist */,
 			);
 			path = "SwiftUI-Unit-Testing-01Tests";
@@ -128,6 +139,15 @@
 				E41CD0BC262CFED400679FCA /* Info.plist */,
 			);
 			path = "SwiftUI-Unit-Testing-01UITests";
+			sourceTree = "<group>";
+		};
+		E41CD0CC262CFF2000679FCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E41CD0CD262CFF2000679FCA /* Movie.swift */,
+				E41CD0CE262CFF2000679FCA /* MovieRepository.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +220,7 @@
 					};
 					E41CD0AA262CFED400679FCA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = E41CD099262CFED200679FCA;
 					};
 					E41CD0B5262CFED400679FCA = {
@@ -261,6 +282,9 @@
 			files = (
 				E41CD0A0262CFED200679FCA /* ContentView.swift in Sources */,
 				E41CD09E262CFED200679FCA /* SwiftUI_Unit_Testing_01App.swift in Sources */,
+				E41CD0F4262D014700679FCA /* FilmFestUI.swift in Sources */,
+				E41CD0D1262CFF2000679FCA /* Movie.swift in Sources */,
+				E41CD0D2262CFF2000679FCA /* MovieRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41CD0B0262CFED400679FCA /* SwiftUI_Unit_Testing_01Tests.swift in Sources */,
+				E41CD0DF262CFF7200679FCA /* MovieRepoTest.swift in Sources */,
+				E41CD0E0262CFF7200679FCA /* MovieStructTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +484,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SwiftUI-Unit-Testing-01Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -469,6 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mpanitz.SwiftUI-Unit-Testing-01Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-Unit-Testing-01.app/SwiftUI-Unit-Testing-01";
@@ -480,6 +507,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SwiftUI-Unit-Testing-01Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
